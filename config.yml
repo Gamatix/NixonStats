@@ -1,10 +1,10 @@
-# PteroStats config
+ # PteroStats config
 # If you need help, join our discord server here: https://discord.gg/zv6maQRah3
 
 # Bot Configuration
-token: "Put bot token here"
+token: "MTIxMjcxMjEyODUwMzQ4MDM0MQ.GVLsnh.zrhwtQMbjtTPeaMThl_64MiEe6WDnUndjU_RpU"
 presence:
-  text: "Hosting Panel"
+  text: "NixonNodes.com"
   type: "watching" # can be 'watching', 'playing', 'listening', or 'competing'. 'streaming' is not working for now
   status: "online" # can be 'online', 'idle', 'dnd', or 'invisible'
 
@@ -15,8 +15,8 @@ timeout: 1 # How much time to wait for a node to respond to the bot (if you chan
 
 # Panel Configuration
 panel:
-  url: "Put panel url here"
-  key: "Put panel apikey here"
+  url: "ptlc_kZty4ARoztedVgIu7F5cFJE1uymJ3POByrUwrlhx9To"
+  key: "https://panel.nixonnodes.com/"
 
 # Message and Embed Configuration
 # set the option as '' if you want to disable it
@@ -25,12 +25,12 @@ message:
   attachment: "" # If you enable attachment on message it will upload the attachment first before sending or editing message and will result in delayed stats
 
 embed:
-  title: "PteroStats"
-  color: "5865F2"
+  title: "NixonNodes"
+  color: "32CD32"
   description: "Next update {{time}}" # You can use {{time}} to make "in X seconds" time format
-  footer: "By Hirzi#8701"
+  footer: "Nixon"
   timestamp: true
-  thumbnail: ""
+  thumbnail: "https://cdn.discordapp.com/icons/1178200262947647528/1f28bcba182ebc928a525fc89530bf39.png"
   image: ""
   field:
     title: ""
@@ -38,7 +38,7 @@ embed:
 
 # Message Button Configuration
 button:
-  enable: true
+  enable: false
   btn1:
     label: "PteroStats"
     url: "https://github.com/HirziDevs/PteroStats"
@@ -79,9 +79,9 @@ panel_settings:
 
 # Mentions a User or Role if any node is offline (this feature is still in testing, please report if you have a problem)
 mentions: # to enable atleast put 1 ID on user or role bellow
-  user: [] # Put User ID here (Example: "user: ['548867757517570058', '816219634390663230']")
-  role: [] # Put Role ID here (Example: "role: ['796083838236622858', '858198863973187585']")
-  channel: "" # Put Channel ID here for the logging
+  user: ['548867757517570058'] # Put User ID here (Example: "user: ['548867757517570058', '816219634390663230']")
+  role: ['796083838236622858'] # Put Role ID here (Example: "role: ['796083838236622858', '858198863973187585']")
+  channel: "796083838236622858 " # Put Channel ID here for the logging
 
 # Log error to console if a server offline (enable this when you have a problem that you want to report)
 log_error: false # set to "true" to enable
